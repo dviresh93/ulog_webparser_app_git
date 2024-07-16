@@ -1,0 +1,29 @@
+/* Collapsible.css */
+.collapsible button {
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  border: none;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+  transition: 0.4s;
+}
+
+.collapsible button:hover {
+  background-color: #ddd;
+}
+
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  padding: 0 10px;
+}
+
+/* Collapsible.css */
+.collapsible-content.open {
+  max-height: 500px; /* Adjust this value according to your content size */
+}

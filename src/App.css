@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #2e2e2e; /* Dark grey background */
+  margin: 0;
+  padding: 0;
+  color: #f4f4f9; /* Light grey text */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.top-section {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #1c1c1c; /* Darker grey */
+  padding: 20px 0;
+  text-align: center;
+  height: 60px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.top-section input[type="file"] {
+  display: none;
+}
+
+.top-section button {
+  background-color: #444; /* Grey */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.top-section button:hover {
+  background-color: #555; /* Slightly lighter grey */
+}
+
+.filename-display {
+  padding: 10px;
+  color: #fff;
+  background-color: #444; /* Grey */
+  margin-left: 10px;
+  border-radius: 4px;
+}
+
+.main-content {
+  display: flex;
+  margin-top: 80px;
+  width: 100%;
+}
+
+.sidebar {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  background-color: #1c1c1c; /* Darker grey */
+  padding: 10px;
+  transition: width 0.3s;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar.closed {
+  width: 50px;
+}
+
+.sidebar button {
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s, border 0.3s;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5); /* Subtle black border around text */
+}
+
+.sidebar button:hover {
+  background-color: #333; /* Dark grey */
+}
+
+.sidebar button.active {
+  background-color: #555; /* Grey */
+  border-left: 4px solid #00aaff; /* Lighter blue */
+  font-weight: bold;
+  color: #fff;
+}
+
+.toggle-button {
+  background-color: #333; /* Dark grey */
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.toggle-button:hover {
+  background-color: #444; /* Grey */
+}
+
+.hamburger-icon {
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  display: block;
+  margin: 4px 0;
+}
+
+.content {
+  width: 80%;
+  padding: 20px;
+  background-color: #3a3a3a; /* Grey */
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table, th, td {
+  border: 1px solid #555; /* Grey */
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #444; /* Grey */
+  color: white;
+}
+
+td {
+  background-color: #3a3a3a; /* Grey */
+}
+
+td:nth-child(even) {
+  background-color: #2e2e2e; /* Dark grey */
+}

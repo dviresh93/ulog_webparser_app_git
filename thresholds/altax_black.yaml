@@ -1,0 +1,34 @@
+fw_version: ["v1.3.6", "v1.4.60"]
+fastfwd_flight_vel : [-10, 10]
+hover_flight_vel: [-0.2, 0.2]
+
+# manual control setpoints threshold
+manual_control_stick_center_x : [0.1, 0.2]
+manual_control_stick_center_y : [0.1, 0.2]
+manual_control_stick_center_z : [0.45, 0.55]
+manual_control_timeinverval_diff : 0.5 # in seconds 
+
+
+# Gyro noise thresholds
+gyro_noise_hover: [-50, 50]
+
+# Accelerometer noise thresholds
+accel_noise_hover: [-25, 25]
+accel_noise_fastforward: [-150, 150]
+
+# GPS thresholds
+gps_satellites_count_min: 15
+gps_jamming: 20
+gps_fix: 3
+gps_min_horizontal_accuracy: 0.5
+
+cpu_max_load: 95 # percentage
+ram_max_usage: 70 # percentage
+
+actuator_thrust_hover: [0.3, 0.6]
+actuator_aux_main_start_hw_iesc: [1225, 1150] # type 2
+actuator_aux_main_start_dji_iesc: 1300 # type 1 
+# TODO: get value for this, actuator_aux_main_start_dji_noiesc
+
+battery_count: 2
+battery_current_hover: [30, 50]

@@ -1,0 +1,52 @@
+.key-value-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.key-value-table th, .key-value-table td {
+  border: 1px solid #555;
+  padding: 8px;
+  text-align: center; /* Center the content */
+  max-width: 200px; /* Set a maximum width for the columns */
+  word-wrap: break-word; /* Ensure long words break to the next line */
+}
+
+.key-value-table th {
+  background-color: #444;
+  color: white;
+}
+
+.key-value-table td {
+  background-color: #3a3a3a;
+  position: relative; /* For positioning the status indicator */
+}
+
+.key-value-table td:nth-child(even) {
+  background-color: #2e2e2e;
+}
+
+.nested-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.nested-table td {
+  border: 1px solid #555;
+  padding: 4px;
+  background-color: #3a3a3a;
+  text-align: center; /* Center the content */
+  max-width: 200px; /* Set a maximum width for the columns */
+  word-wrap: break-word; /* Ensure long words break to the next line */
+}
+
+.status-indicator {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  margin-left: 8px;
+  vertical-align: middle;
+}
